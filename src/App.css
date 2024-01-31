@@ -1,6 +1,95 @@
+/* HTML5 display-role reset for older browsers */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #D7FDEC;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+}
+
 .App {
   text-align: center;
 }
+
+/* CSS */
+button {
+  background: #D7FDEC;
+  border: 1px solid #34344A;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #34344A;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16px;
+  /* min-height: px; */
+  outline: 0;
+  padding: 8px 10px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+button:hover,
+button:active {
+  background-color: #34344A;
+  background-position: 0 0;
+  border-color: #D7FDEC;
+  color: #D7FDEC;
+}
+
+button:active {
+  opacity: .5;
+}
+
+.TopInput {
+  background-color: #D7FDEC;
+  color: #34344A;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.ToDoHeading {
+  margin: 0 0 10px 0;
+  color: #f2e9e4;
+  font-size: 70px;
+}
+
+
+.TopHeader {
+  background-color: #34344A;
+  padding: 1em;
+  min-height: 6em;
+  display: wrap;
+}
+
+.completed {
+  text-decoration: line-through;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -32,6 +121,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
